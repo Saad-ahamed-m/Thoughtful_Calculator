@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mystyles.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body class="img">
+    <div class="show">
+      <center><h2>Thoughtful Calculator</h2></center><br>
+      <center><input type="text" name="" value="" id='0'>
+      <input type="text" name="" value="" id='1'><br><br>
+      <br>
+      <div>
+      <button type="button" name="button" id='addition' onclick="add()" onmouseover="adt()" onmouseout="iadt()">ADD</button>
+      <button type="button" name="button" id='subtraction' onclick="sub()" onclick="add()" onmouseover="sut()" onmouseout="isut()">SUBTRACT</button>
+      <button type="button" name="button" id='multipication' onclick="mul()" onclick="add()" onmouseover="mut()" onmouseout="imut()">MULTIPLY</button>
+      <button type="button" name="button" id='division' onclick="div()" onclick="add()" onmouseover="dit()" onmouseout="idit()">DIVIDE</button>
+      <button type="button" name="button" id='power' onclick="pow()" onclick="add()" onmouseover="pot()" onmouseout="ipot()">POWER</button>
+      </div>
+      <br><br>
+       <input type="text" name=""  id='2' onkeyup="dont()">
+       <br><br><br>
+       <button type="button" name="button" id='clear' onclick="cllear()" onmouseover="clt()" onmouseout="iclt()">CLEAR</button><br><br>
+       <h3 id="Thought">----- Your Thought goes here ----</h3>
+      </center>
+    </div>
+
+    </body>
+    <script type="text/javascript">
+ function add()
+ {
+   document.getElementById('2').value=Number(document.getElementById('0').value)+Number(document.getElementById('1').value);
+ }
+ function sub()
+ {
+   document.getElementById('2').value=Number(document.getElementById('0').value)-Number(document.getElementById('1').value);
+ }
+ function mul()
+ {
+   document.getElementById('2').value=Number(document.getElementById('0').value)*Number(document.getElementById('1').value);
+ }
+ function div()
+ {
+   document.getElementById('2').value=Number(document.getElementById('0').value)/Number(document.getElementById('1').value);
+ }
+ function pow()
+ {
+   document.getElementById('2').value=Math.pow(Number(document.getElementById('0').value),Number(document.getElementById('1').value));
+ }
+ function cllear()
+ {
+   console.log("ahaan");
+  document.getElementById('0').value=0;
+  document.getElementById('1').value=0;
+  document.getElementById('2').value="";
+ }
+ function dont(){
+   alert("Don't Type here");
+   document.getElementById('2').value="";
+ }
+ function adt() {
+document.getElementById('Thought').innerHTML="The opportunities";
+ }
+ function iadt() {
+   document.getElementById('Thought').innerHTML="----- Your Thought goes here ----";
+ }
+ function sut() {
+document.getElementById('Thought').innerHTML="The errors";
+ }
+ function isut() {
+   document.getElementById('Thought').innerHTML="----- Your Thought goes here ----";
+ }
+ function mut() {
+document.getElementById('Thought').innerHTML="The victories";
+ }
+ function imut() {
+   document.getElementById('Thought').innerHTML="----- Your Thought goes here ----";
+ }
+ function dit() {
+document.getElementById('Thought').innerHTML="The obstacles";
+ }
+ function idit() {
+   document.getElementById('Thought').innerHTML="----- Your Thought goes here ----";
+ }
+ function pot() {
+document.getElementById('Thought').innerHTML="Up your spirit";
+ }
+ function ipot() {
+   document.getElementById('Thought').innerHTML="----- Your Thought goes here ----";
+ }
+ function clt() {
+   document.getElementById('Thought').innerHTML="Negativity";
+ }
+ function iclt() {
+   document.getElementById('Thought').innerHTML="----- Your Thought goes here ----";
+ }
+    </script>
+</html>
